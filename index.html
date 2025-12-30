@@ -1,83 +1,32 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <title>我的 YouTube 影片</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, "Noto Sans TC", sans-serif;
-      background-color: #f5f5f5;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    header {
-      background-color: #24292e;
-      color: white;
-      padding: 20px 10px;
-    }
-    main {
-      padding: 40px 20px;
-    }
-    h1 {
-      margin-bottom: 20px;
-    }
-    .video-thumbnail img {
-      max-width: 100%;
-      width: 480px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      transition: transform 0.2s ease;
-    }
-    .video-thumbnail img:hover {
-      transform: scale(1.03);
-    }
-    .link {
-      margin-top: 20px;
-      font-size: 16px;
-    }
-    .link a {
-      color: #0366d6;
-      text-decoration: none;
-    }
-    .link a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      margin-top: 60px;
-      padding: 20px;
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的影片</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        iframe {
+            width: 560px;
+            height: 315px;
+            max-width: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-
-  <header>
-    <h1>我的 YouTube 影片</h1>
-  </header>
-
-  <main>
-    <p>點擊下方圖片即可前往 YouTube 觀看影片</p>
-
-    <div class="video-thumbnail">
-      <a href="https://www.youtube.com/watch?v=AJ654S99ftg" target="_blank">
-        <img src="https://img.youtube.com/vi/AJ654S99ftg/0.jpg" alt="YouTube 影片縮圖">
-      </a>
-    </div>
-
-    <div class="link">
-      <p>影片連結：</p>
-      <a href="https://www.youtube.com/watch?v=AJ654S99ftg" target="_blank">
-        https://www.youtube.com/watch?v=AJ654S99ftg
-      </a>
-    </div>
-  </main>
-
-  <footer>
-    © 2025 My Static Website
-  </footer>
-
+    <h1>我的影片</h1>
+    <iframe src="https://www.youtube.com/embed/AJ654S99ftg" 
+            title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
 </body>
 </html>
